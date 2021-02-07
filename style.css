@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+.mealTitle {
+  text-decoration: none;
+  color: tomato;
+}
+#header-area {
+  background: rgb(225, 223, 223);
+  color: black;
+  min-height: 10vh;
+}
+.header {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-items {
+  display: flex;
+}
+.nav-items li {
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+}
+.nav-items li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Search Bar*/
+#search-area {
+  min-height: 20vh;
+}
+.search-field {
+  width: 70%;
+  margin: auto;
+  padding: 30px;
+}
+.input-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#foodSearch {
+  width: 60%;
+}
+#foodSearch,
+#submit-btn {
+  padding: 15px 40px;
+  border: 1px solid #ededed;
+  outline: none;
+}
+#submit-btn {
+  background: tomato;
+  color: white;
+}
+
+/*FoodShow*/
+#noFood {
+  color: red;
+  text-align: center;
+}
+
+#foodShow {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.meal-items {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ededed;
+}
+.meal-items img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+/*Meal Ingredients Section*/
+#foodDetails {
+  margin-bottom: 20px;
+}
+.mealIngredients {
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px grey;
+  background: lightblue;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+.food-name {
+  padding: 15px;
+}
+.mealTitle,
+.ingreadientTitle {
+  align-self: flex-start;
+}
+.mealImg {
+  height: auto;
+  width: 50%;
+}
+.mealImg img {
+  height: auto;
+  width: 100%;
+}
+.mealDetails {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notFoundImg {
+  height: 300px;
+}
