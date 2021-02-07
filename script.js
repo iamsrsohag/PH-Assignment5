@@ -13,12 +13,13 @@ function displayFood(foods){
     const notFound = document.getElementById('noFood');
     const foodShow = document.getElementById('foodShow');
     if(!foods){
+        document.getElementById("foodDetails").style.display = "none";
         notFound.innerHTML =`<h2>Sorry No Meals Found! Try Again</h2><br>
-        <img class = "notFoundImg" src="img/404.jpg">
-        `
-        foodShow.innerHTML = "";
+        <img class = "notFoundImg" src="img/404.jpg">`
+        foodShow.innerHTML = "";  
     }
     else{
+        document.getElementById("foodDetails").style.display = "block";
         foodShow.innerHTML = "";
         notFound.innerHTML = "";
         for (const food in foods) {
